@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--default-margin);
+}
+
+.search-section{
+  margin: 20px;
+}
+
+.images {
+  margin-top: var(--medium-margin);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--default-spacing);
+  justify-content: center;
+  align-items: center;
+}
+
+.images .image_container {
+  display: flex;
+  flex-direction: column;
+  
+  justify-self: center;
+  align-self: center;
+  margin-left: 2rem;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+
+.favorites {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #911151;
+  border-radius: 6px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.favorites:hover {
+  background-color: #911151;
+  color: white;
+}
+
+.back {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #911151;
+  border-radius: 6px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.back:hover {
+  background-color: #911151;
+  color: white;
+}
